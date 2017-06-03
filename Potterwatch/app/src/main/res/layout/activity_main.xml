@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    style="@style/hogwarts"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/hogwarts"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -15,7 +14,7 @@
         android:layout_height="275dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="32dp"
-        android:src="@drawable/hogwarts_logo"/>
+        android:src="@drawable/hogwarts_logo" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -26,53 +25,51 @@
         <EditText
             android:id="@+id/name"
             android:layout_width="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingTop="16dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:ems="10"
-            android:hint="Severus Snape" />
+            android:hint="Severus Snape"
+            android:paddingTop="16dp" />
 
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
-            android:paddingTop="16dp"
-
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="snape@hogwarts.com"/>
+            android:hint="snape@hogwarts.com"
+            android:paddingTop="16dp" />
 
         <EditText
             android:id="@+id/password"
-            android:paddingTop="16dp"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Password" />
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:paddingTop="16dp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_height="wrap_content">
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
             android:id="@+id/alohomora"
-            android:padding="16dp"
-            android:layout_height="wrap_content"
-            android:text="Alohomora"
-            />
-
-        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="16dp"
+            android:text="Alohomora" />
+
+        <Button
             android:id="@+id/signUp"
-            android:text="Muggle? Sign up here"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Muggle? Sign up here" />
     </LinearLayout>
 
 </LinearLayout>
