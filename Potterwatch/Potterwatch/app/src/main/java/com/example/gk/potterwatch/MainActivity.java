@@ -15,6 +15,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.FacebookSdk;
+import com.facebook.AccessToken;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -77,6 +85,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
@@ -86,6 +95,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         final Button signUp = (Button) findViewById(R.id.SignUp);
         SignInButton googleSignIn = (SignInButton) findViewById(R.id.sign_in_button);
         final Button signOut = (Button) findViewById(R.id.sign_out_button);
+
 
         signOut.setVisibility(View.GONE);
 
