@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Potterwatch</string>
+    <string name="title_activity_sorting_hat">SortingHat</string>
+
+    <!--
+        For Facebook login
+    -->
+    <string name="facebook_app_id">1912611918954696</string>
+    <string name="fb_login_protocol_scheme">fb1912611918954696</string>
+
+</resources>
